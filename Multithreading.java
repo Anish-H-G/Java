@@ -1,14 +1,12 @@
-import java.util.*;
-import java.lang.*;
 class A extends Thread
 {
     public void run()
     {
         for(int i=1;i<=5;i++)
         {
-            System.out.println("\tThread A: i="+i);
+            System.out.println("Thread A: i= "+i);
         }
-        System.out.println("Exit from A ");
+        System.out.println("Exit from A");
     }
 }
 class B extends Thread
@@ -17,10 +15,10 @@ class B extends Thread
     {
         for(int j=1;j<=5;j++)
         {
-            System.out.println("\tThread B: j="+j);
+            System.out.println("Thread B: j= "+j);
         }
         System.out.println("Exit from B ");
-    }   
+    }
 }
 class C extends Thread
 {
@@ -28,14 +26,14 @@ class C extends Thread
     {
         for(int k=1;k<=5;k++)
         {
-            System.out.println("\tThread C: k="+k);
+            System.out.println("Thread C: k= "+k);
         }
         System.out.println("Exit from C ");
-    }   
+    }
 }
 class ThreadTest
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         new A().start();
         new B().start();
